@@ -1,7 +1,7 @@
 # Simple Grid
 A lightweight, responsive CSS grid  
 
-Developed by Zach Cole
+Developed by Zach Cole; Extended by Andrew Pilsch
 
 ## Simple Grid and Simple Code
 
@@ -11,11 +11,15 @@ All the code you need is simple and familiar. A parent container class contains 
 
 To define your column width, declare how many columns you want your content to take up on desktop and large screens. For example, if your content should take up 6 out of 12 columns (or half the container), your class name will be .col-6.
 
-If you don’t want columns to expand on mobile devices and small screens, simply add -sm to the end of your column class name. For example, if you want to have two blocks of content floating side-by-side on small screens, each would be given the class name .col-6-sm.
+If you don't want columns to expand on mobile devices and small screens, simply add -sm to the end of your column class name. For example, if you want to have two blocks of content floating side-by-side on small screens, each would be given the class name .col-6-sm.
 
 Update: Grid styles are now available in SASS/SCSS. Hooray! Thanks to [shankariyerr](https://github.com/shankariyerr/) for contributing as well.
 
 Learn more and see code samples at: http://simplegrid.io
+
+## Additions
+
+In addition to the grid above, Andrew Pilsch added a set of `push-` classes which, add X columns' worth of left margin to a column. So, a column with `class="col-6 push-3"` would be six columns wide but offset as though an empty `col-3` column were to the left of it.
 
 ## License
 
