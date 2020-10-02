@@ -52,12 +52,6 @@ $breakpoint-large: 60em; // 960px
   width: 100%;
 }
 
-.row [class^="col"] {
-  float: left;
-  margin: 0.5rem 2%;
-  min-height: 0.125rem;
-}
-
 .row::after {
   content: "";
   display: table;
@@ -67,12 +61,15 @@ $breakpoint-large: 60em; // 960px
 @for $i from 1 to 12 {
   .col-#{$i} {
     width: $width;
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
   }
   .col-#{$i}-sm {
     width: ($width / (12 / $i)) - ($gutter * (12-$i) / 12);
   }
   .push-#{$i}-sm {
-    margin-left: ($width / (12 / $i)) - ($gutter * (12-$i) / 12);
+    margin-left: ($width / (12 / $i)) - ($gutter * (12-$i) / 12) + 6%;
   }
 }
 
@@ -82,7 +79,7 @@ $breakpoint-large: 60em; // 960px
       width: ($width / (12 / $i)) - ($gutter * (12-$i) / 12);
     }
     .push-#{$i} {
-      margin-left: ($width / (12 / $i)) - ($gutter * (12-$i) / 12);
+      margin-left: ($width / (12 / $i)) - ($gutter * (12-$i) / 12) + 6%;
     }
   }
   .hidden-sm {
