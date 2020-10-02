@@ -58,28 +58,43 @@ $breakpoint-large: 60em; // 960px
   clear: both;
 }
 
+@mixin columns($columns, $property: width, $offset: 0) {
+  #{$property}: ($width / (12 / $columns)) - ($gutter * (12-$columns) / 12) +
+    $offset;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: $width;
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
 @for $i from 1 to 12 {
-  .col-#{$i} {
-    width: $width;
-    float: left;
-    margin: 0.5rem 2%;
-    min-height: 0.125rem;
-  }
   .col-#{$i}-sm {
-    width: ($width / (12 / $i)) - ($gutter * (12-$i) / 12);
+    @include columns($i);
   }
   .push-#{$i}-sm {
-    margin-left: ($width / (12 / $i)) - ($gutter * (12-$i) / 12) + 6%;
+    @include columns($i, margin-left, 6%);
   }
 }
 
 @media only screen and (min-width: $breakpoint-med) {
   @for $i from 1 to 12 {
     .col-#{$i} {
-      width: ($width / (12 / $i)) - ($gutter * (12-$i) / 12);
+      @include columns($i);
     }
     .push-#{$i} {
-      margin-left: ($width / (12 / $i)) - ($gutter * (12-$i) / 12) + 6%;
+      @include columns($i, margin-left, 6%);
     }
   }
   .hidden-sm {
