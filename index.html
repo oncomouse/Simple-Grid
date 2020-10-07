@@ -14,12 +14,17 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism.min.css">
   <!-- Place favicon.ico in the root directory -->
 
   <style>
     html {
       font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
       color: #312e30;
+    }
+
+    body {
+      margin-bottom: 10rem !important;
     }
 
     a {
@@ -33,6 +38,11 @@
 
     p {
       text-align: center;
+    }
+
+    pre {
+      max-height: 25rem;
+      overflow: scroll-y;
     }
 
     h1,
@@ -107,6 +117,38 @@
       <div class="col-12">twelve</div>
     </div>
   </div>
+  <h3>Source Code</h3>
+  <div class="container">
+    <pre><code class="language-html">&lt;div class=&quot;container demo&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-1&quot;&gt;one&lt;/div&gt;
+      &lt;div class=&quot;col-11&quot;&gt;eleven&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-2&quot;&gt;two&lt;/div&gt;
+      &lt;div class=&quot;col-10&quot;&gt;ten&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-3&quot;&gt;three&lt;/div&gt;
+      &lt;div class=&quot;col-9&quot;&gt;nine&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-4&quot;&gt;four&lt;/div&gt;
+      &lt;div class=&quot;col-8&quot;&gt;eight&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-5&quot;&gt;five&lt;/div&gt;
+      &lt;div class=&quot;col-7&quot;&gt;seven&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-6&quot;&gt;six&lt;/div&gt;
+      &lt;div class=&quot;col-6&quot;&gt;six&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-12&quot;&gt;twelve&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  </div>
   <h2>Usage With Push</h2>
   <p>This implementation also implements negative space using the <code>push-</code> classes (<code>push-1</code>, <code>push-2</code>, etc).</p>
   <div class="container demo">
@@ -149,6 +191,51 @@
       <div class="col-1 push-3">one</div>
     </div>
   </div>
+  <h3>Source Code</h3>
+  <div class="container">
+    <pre><code class="language-html">&lt;div class=&quot;container demo&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-11 push-1&quot;&gt;eleven, push one&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-10 push-2&quot;&gt;ten, push two&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-9 push-3&quot;&gt;nine, push three&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-8 push-4&quot;&gt;eight, push four&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-7 push-5&quot;&gt;seven, push five&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-6 push-6&quot;&gt;six, push six&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-5 push-7&quot;&gt;five, push seven&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-4 push-8&quot;&gt;four, push eight&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-3 push-9&quot;&gt;three, push nine&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-2 push-10&quot;&gt;two, push ten&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-1 push-11&quot;&gt;one&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-1&quot;&gt;one&lt;/div&gt;
+      &lt;div class=&quot;col-4 push-3&quot;&gt;four, push three&lt;/div&gt;
+      &lt;div class=&quot;col-1 push-3&quot;&gt;one&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 
 </html>
