@@ -19,6 +19,29 @@
   <style>
     html {
       font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      color: #312e30;
+    }
+
+    a {
+      color: #6e9cb0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: center;
     }
 
     .demo .col-1,
@@ -39,7 +62,9 @@
       border-color: rgb(213, 136, 136);
       border-width: 1px;
       border-style: solid;
-      background: rgb(213, 136, 136, 0.2)
+      background: rgb(213, 136, 136, 0.1);
+      padding: 1rem 0;
+      text-align: center;
     }
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css">
@@ -47,6 +72,12 @@
 </head>
 
 <body>
+  <h1>Simple Grid</h1>
+  <div class="container">
+    <p>A simple CSS grid framework. <a href="https://github.com/oncomouse/Simple-Grid">Download it on GitHub!</a></p>
+    <p>Adapted from <a href="https://simplegrid.io/">Simple-Grid</a>.</p>
+  </div>
+  <h2>Basic Usage</h2>
   <div class="container demo">
     <div class="row">
       <div class="col-1">one</div>
@@ -74,6 +105,47 @@
     </div>
     <div class="row">
       <div class="col-12">twelve</div>
+    </div>
+  </div>
+  <h2>Usage With Push</h2>
+  <div class="container demo">
+    <div class="row">
+      <div class="col-11 push-1">eleven, push one</div>
+    </div>
+    <div class="row">
+      <div class="col-10 push-2">ten, push two</div>
+    </div>
+    <div class="row">
+      <div class="col-9 push-3">nine, push three</div>
+    </div>
+    <div class="row">
+      <div class="col-8 push-4">eight, push four</div>
+    </div>
+    <div class="row">
+      <div class="col-7 push-5">seven, push five</div>
+    </div>
+    <div class="row">
+      <div class="col-6 push-6">six, push six</div>
+    </div>
+    <div class="row">
+      <div class="col-5 push-7">five, push seven</div>
+    </div>
+    <div class="row">
+      <div class="col-4 push-8">four, push eight</div>
+    </div>
+    <div class="row">
+      <div class="col-3 push-9">three, push nine</div>
+    </div>
+    <div class="row">
+      <div class="col-2 push-10">two, push ten</div>
+    </div>
+    <div class="row">
+      <div class="col-1 push-11">one</div>
+    </div>
+    <div class="row">
+      <div class="col-1">one</div>
+      <div class="col-4 push-3">four, push three</div>
+      <div class="col-1 push-3">one</div>
     </div>
   </div>
 </body>
