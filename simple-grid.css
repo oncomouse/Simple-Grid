@@ -51,7 +51,9 @@
   width: 96%;
   float: left;
   margin: 0.5rem 2%;
-  min-height: 0.125rem; }
+  min-height: 0.125rem;
+  border-collapse: collapse;
+  box-sizing: border-box; }
 
 .col-1-sm {
   width: 4.33333%; }

@@ -78,6 +78,8 @@ $breakpoint-large: 60em; // 960px
   float: left;
   margin: 0.5rem 2%;
   min-height: 0.125rem;
+  border-collapse: collapse;
+  box-sizing: border-box;
 }
 @for $i from 1 to 12 {
   .col-#{$i}-sm {
