@@ -3,6 +3,8 @@ A lightweight, responsive CSS grid
 
 Developed by Zach Cole; Extended by Andrew Pilsch
 
+Demo Site at: https://oncomouse.github.io/Simple-Grid/
+
 ## Simple Grid and Simple Code
 
 Simple Grid is a mobile-first 12-column CSS grid system to make developing responsive websites easy and fast.
