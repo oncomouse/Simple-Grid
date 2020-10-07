@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simple Grid Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Simple Grid Demo">
+  <!-- <meta property="og:type" content=""> -->
+  <meta property="og:url" content="https://oncomouse.github.io/Simple-Grid">
+  <!-- <meta property="og:image" content=""> -->
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <style>
+    html {
+      font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    .demo .col-1,
+    .demo .col-2,
+    .demo .col-3,
+    .demo .col-4,
+    .demo .col-5,
+    .demo .col-6,
+    .demo .col-7,
+    .demo .col-8,
+    .demo .col-9,
+    .demo .col-10,
+    .demo .col-11,
+    .demo .col-12 {
+      border-collapse: collapse;
+      box-sizing: border-box;
+      color: rgb(213, 136, 136);
+      border-color: rgb(213, 136, 136);
+      border-width: 1px;
+      border-style: solid;
+      background: rgb(213, 136, 136, 0.2)
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oncomouse/Simple-Grid@master/simple-grid.min.css">
+</head>
+
+<body>
+  <div class="container demo">
+    <div class="row">
+      <div class="col-1">one</div>
+      <div class="col-11">eleven</div>
+    </div>
+    <div class="row">
+      <div class="col-2">two</div>
+      <div class="col-10">ten</div>
+    </div>
+    <div class="row">
+      <div class="col-3">three</div>
+      <div class="col-9">nine</div>
+    </div>
+    <div class="row">
+      <div class="col-4">four</div>
+      <div class="col-8">eight</div>
+    </div>
+    <div class="row">
+      <div class="col-5">five</div>
+      <div class="col-7">seven</div>
+    </div>
+    <div class="row">
+      <div class="col-6">six</div>
+      <div class="col-6">six</div>
+    </div>
+    <div class="row">
+      <div class="col-12">twelve</div>
+    </div>
+  </div>
+</body>
+
+</html>
